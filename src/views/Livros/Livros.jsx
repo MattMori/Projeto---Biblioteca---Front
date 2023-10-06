@@ -47,6 +47,8 @@ const Livros = () => {
             <li key={livro.id}>
               {livro.titulo}
               <span>{livro.editora}</span>
+              <span>Paginas:{livro.numeroDePaginas}</span>
+              <span>ISBN:{livro.ISBN}</span>
               <div className='botoes'>
                 <div>
                   <Link className='btn edit' to={`/livros/edicao/${livro._id}`}>
